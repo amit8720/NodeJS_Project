@@ -1,0 +1,48 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white; 
+    color: white; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.cart-icon {
+    width: 35px; 
+    height: 35px;
+    margin-left: 0.5rem; 
+}
+
+.logo-link {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white;
+}
+
+.header-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(253, 244, 244);
+}
+
+.header-nav a {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: white; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #ddd; 
+}
+
+.header-nav a, .header-logo a {
+    text-shadow: 1px 1px 2px #dccdcd; 
+}

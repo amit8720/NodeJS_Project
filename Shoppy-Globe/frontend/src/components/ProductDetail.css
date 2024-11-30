@@ -1,0 +1,134 @@
+
+.background-container {
+    background-image: url('https://img.freepik.com/free-vector/background-wave-gradient-minimalist-style_483537-5207.jpg?ga=GA1.1.918818175.1715698361');
+    background-size: cover; 
+    background-position: center; 
+    padding: 40px; 
+    height: auto; 
+}
+
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0; 
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+
+.price, .brand, .rating {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 4px 0; 
+}
+
+
+.add-to-cart-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3d246c; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button.in-cart {
+    background-color: green; 
+}
+
+.add-to-cart-button:hover {
+    background-color: #2a184b;
+}
+
+.add-to-cart-button.in-cart:hover {
+    background-color: darkgreen;
+}
+
+
+
+.filled-star {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.empty-star {
+    color: lightgray;
+    font-size: 1.5rem; 
+}
+
+.category, .discount, .warranty, .shipping, .availability, .return-policy, .minimum-order {
+    font-size: 1rem;
+    color: #666;
+    margin: 4px 0;
+}
+.price {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #3D246C; 
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);   
+}
+
+.discount {
+    font-size: 1rem; 
+    color: red; 
+
+}
+
+.discount::before {
+    content: 'Discounted Price: ';
+    font-weight: normal; 
+}
+.discount2 {
+    font-size: 1rem;
+    color: red; 
+    text-decoration: line-through;
+}
+
+.discount2::before {
+    content: 'Discounted Price: ';
+    font-weight: normal; 
+}
+
+.rating-text {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        grid-template-columns: 1fr; 
+    }
+}
